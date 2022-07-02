@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var todos = [
+    @State var todos = [
         Todo(title: "Work on my skill issues"),
         Todo(title: "Watch some Paw Patrol episodes"),
         Todo(title: "Delete everyone's points"),
@@ -18,15 +18,20 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List(todos) { todo in
-                HStack {
-                    Image(systemName: todo.isCompleted ? "shield.fill"
-                          : "shield")
-                    Text(todo.title)
-                        .strikethrough(todo.isCompleted)
-                }
+            List {
+                ForEach($todos) { $todo in
+                    NavigationLink {
+                        TodoDetailView(todo: $todo)
+                    } label: {
+                        HStack {
+                            Image(systemName: todo.isCompleted ? "checkmark.shield.fill" : "shield")
+                            Text(todo.title)
+                                .strikethrough(todo.isCompleted)
+                        }
+                    }
+                } 
             }
-            .navigationTitle("Paw Patrol Todo")
+            .navigationTitle("Paw Patrol")
         }
     }
 }
