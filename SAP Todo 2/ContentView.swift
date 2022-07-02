@@ -33,8 +33,16 @@ struct ContentView: View {
                 .onDelete { indexSet in
                     todos.remove(atOffsets: indexSet)
                 }
+                .onMove { oldOffset, newOffset in
+                    todos.move(fromOffsets: oldOffset, toOffset: newOffset)
+                }
             }
             .navigationTitle("Paw Patrol")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    EditButton()
+                }
+            }
         }
     }
 }
