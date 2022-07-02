@@ -29,7 +29,10 @@ struct ContentView: View {
                                 .strikethrough(todo.isCompleted)
                         }
                     }
-                } 
+                }
+                .onDelete { indexSet in
+                    todos.remove(atOffsets: indexSet)
+                }
             }
             .navigationTitle("Paw Patrol")
         }
