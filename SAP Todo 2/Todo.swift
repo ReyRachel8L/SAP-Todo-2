@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Todo: Identifiable {
+struct Todo: Identifiable, Codable {
     
-    var id = UUID()
+    var id = UUID()        // Universally unique id
     var title: String
     var isCompleted = false
     

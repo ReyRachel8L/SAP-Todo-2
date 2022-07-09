@@ -13,16 +13,16 @@ struct TodoDetailView: View {
     
     var body: some View {
         VStack {
-            TextField("Placeholder", text: $todo.title)
+            TextField("Enter your todo title here", text: $todo.title)
                 .textFieldStyle(.roundedBorder)
                 .padding()
             Button {
-                print("Tapped")
+                todo.isCompleted.toggle()
             } label: {
-                Text("Mark as \(todo.isCompleted ? "completed" : "incompleted")")
+                Text("Mark as \(todo.isCompleted ? "incomplete" : "complete")")
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .background(.teal)
+                    .background(todo.isCompleted ? .green : .red)
                     .foregroundColor(.white)
                     .cornerRadius(10)
                     .padding()
@@ -34,6 +34,6 @@ struct TodoDetailView: View {
 
 struct TodoDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        TodoDetailView(todo: .constant(Todo(title: "Not get hot chocolate")))
+        TodoDetailView(todo: .constant(Todo(title: "Get hot chocolate")))
     }
 }
