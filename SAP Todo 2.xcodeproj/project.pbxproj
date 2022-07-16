@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2FA81532286FD2B800616EAB /* SAP_Todo_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA81531286FD2B800616EAB /* SAP_Todo_2App.swift */; };
+		2F35291C28791DD6009085BE /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35291B28791DD6009085BE /* TodoManager.swift */; };
+		2F35291E287920F7009085BE /* MainTodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35291D287920F7009085BE /* MainTodoListView.swift */; };
 		2FA81534286FD2B800616EAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA81533286FD2B800616EAB /* ContentView.swift */; };
 		2FA81536286FD2B900616EAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA81535286FD2B900616EAB /* Assets.xcassets */; };
 		2FA81539286FD2B900616EAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA81538286FD2B900616EAB /* Preview Assets.xcassets */; };
@@ -17,8 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F35291B28791DD6009085BE /* TodoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManager.swift; sourceTree = "<group>"; };
+		2F35291D287920F7009085BE /* MainTodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTodoListView.swift; sourceTree = "<group>"; };
 		2FA8152E286FD2B800616EAB /* SAP Todo 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAP Todo 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FA81531286FD2B800616EAB /* SAP_Todo_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAP_Todo_2App.swift; sourceTree = "<group>"; };
 		2FA81533286FD2B800616EAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2FA81535286FD2B900616EAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FA81538286FD2B900616EAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -57,8 +59,9 @@
 		2FA81530286FD2B800616EAB /* SAP Todo 2 */ = {
 			isa = PBXGroup;
 			children = (
-				2FA81531286FD2B800616EAB /* SAP_Todo_2App.swift */,
+				2F35291B28791DD6009085BE /* TodoManager.swift */,
 				2FA81533286FD2B800616EAB /* ContentView.swift */,
+				2F35291D287920F7009085BE /* MainTodoListView.swift */,
 				2FA81543286FF34700616EAB /* NewTodoView.swift */,
 				2FA81541286FEA9E00616EAB /* TodoDetailView.swift */,
 				2FA8153F286FD36000616EAB /* Todo.swift */,
@@ -147,8 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FA81534286FD2B800616EAB /* ContentView.swift in Sources */,
+				2F35291E287920F7009085BE /* MainTodoListView.swift in Sources */,
+				2F35291C28791DD6009085BE /* TodoManager.swift in Sources */,
 				2FA81540286FD36000616EAB /* Todo.swift in Sources */,
-				2FA81532286FD2B800616EAB /* SAP_Todo_2App.swift in Sources */,
 				2FA81544286FF34700616EAB /* NewTodoView.swift in Sources */,
 				2FA81542286FEA9E00616EAB /* TodoDetailView.swift in Sources */,
 			);

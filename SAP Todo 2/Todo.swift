@@ -9,7 +9,7 @@ import Foundation
 
 struct Todo: Identifiable, Codable {
     
-    var id = UUID()        // Universally unique id
+    var id = UUID()
     var title: String
     var isCompleted = false
     
